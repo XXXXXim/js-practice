@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //단순함수호출시 this
+
+    const myfunction = function() {
+        return this
+    }
+    console.log(this)
+
+    //2. 메소드 호출시 this
+    const myobj = {
+      data : "이건 객체다",
+      myfunction : myfunction
+    }
+    console.log(myobj.myfunction())
+  </script>
+  
+</body>
+</html>
