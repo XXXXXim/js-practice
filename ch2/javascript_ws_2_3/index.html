@@ -9,18 +9,26 @@
   <script>
     const scores = [90, 80, 70, 60, 40]
     // for .. of 문으로 코드 작성
-    for  (const score of scores) {
-      const length = scores.length
-    } console.log(length)
-
-    for (const total of scores) {
+    let length = 0;
+    let sum = 0;
       for (const score of scores) {
-        total += score
+      length +=1;
+      sum += score
       }
-    }
+    // 길이
+    console.log(length)
+    // 총 합
+    console.log(sum)
+    // score 평균값
+    const average = sum / length;
+    console.log(average)
 
     // while문으로 코드 작성
-
+    let i = length -1;
+    while (i >= 0) {
+      console.log(scores[i])
+      i -=1;
+    }
   </script>
 </body>
 </html>
